@@ -22,5 +22,29 @@
     "bundled": 30384,
     "minified": 9993,
     "gzipped": 3501
+  },
+  "esm\\history.js": {
+    "bundled": 29269,
+    "minified": 12955,
+    "gzipped": 3794,
+    "treeshaked": {
+      "rollup": {
+        "code": 132,
+        "import_statements": 132
+      },
+      "webpack": {
+        "code": 1324
+      }
+    }
+  },
+  "umd\\history.js": {
+    "bundled": 34362,
+    "minified": 12388,
+    "gzipped": 4238
+  },
+  "umd\\history.min.js": {
+    "bundled": 31695,
+    "minified": 10446,
+    "gzipped": 3755
   }
 }

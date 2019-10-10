@@ -21,6 +21,7 @@ const cjs = [
     external,
     plugins: [
       babel({ exclude: /node_modules/ }),
+      nodeResolve(),
       replace({ 'process.env.NODE_ENV': JSON.stringify('development') })
     ]
   },
@@ -30,6 +31,7 @@ const cjs = [
     external,
     plugins: [
       babel({ exclude: /node_modules/ }),
+      nodeResolve(),
       replace({ 'process.env.NODE_ENV': JSON.stringify('production') }),
       uglify()
     ]
@@ -47,6 +49,7 @@ const esm = [
         runtimeHelpers: true,
         plugins: [['@babel/transform-runtime', { useESModules: true }]]
       }),
+      nodeResolve(),
       sizeSnapshot()
     ]
   }
